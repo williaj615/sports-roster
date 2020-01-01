@@ -1,6 +1,6 @@
 import React from 'react';
 import firebase from 'firebase/app';
-
+import MyNavBar from '../components/MyNavBar/MyNavBar';
 import firebaseConnection from '../helpers/data/connection';
 import Auth from '../components/Auth/Auth';
 import './App.scss';
@@ -32,6 +32,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <MyNavBar authed={authed} />
         {/* if they are authenticated, load the team roster */}
         {/* else show login button */}
         {
