@@ -1,0 +1,100 @@
+{
+    "player1": {
+      "id": "player1",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/GeorgiaBosscher_TT.jpg",
+      "name": "GEORGIA BOSSCHER",
+      "position": "Defensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player2": {
+      "id": "player2",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/CarolynFinney_TT.jpg",
+      "name": "CAROLYN FINNEY",
+      "position": "Offensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player3": {
+      "id": "player3",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/ClaireDesmond_TT.jpg",
+      "name": "CLAIRE DESMOND",
+      "position": "Offensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player4": {
+      "id": "player4",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/DylanFreechild_TT.jpg",
+      "name": "DYLAN FREECHILD",
+      "position": "Offensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player5": {
+      "id": "player5",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/SarahGriffith_TT.jpg",
+      "name": "SARAH GRIFFITH",
+      "position": "Defensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player6": {
+      "id": "player6",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/LienHoffman_TT.jpg",
+      "name": "LIÊN HOFFMANN",
+      "position": "Offensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player7": {
+      "id": "player7",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/SandyJorgensen_TT.jpg",
+      "name": "SANDY JORGENSEN",
+      "position": "Defensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player8": {
+      "id": "player8",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/BeauKittredge_TT.jpg",
+      "name": "BEAU KITTREDGE",
+      "position": "Defensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player9": {
+      "id": "player9",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/ChrisKocher_TT.jpg",
+      "name": "CHRIS KOCHER",
+      "position": "Defensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player10": {
+      "id": "player10",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/GrantLindsley_TT.jpg",
+      "name": "GRANT LINDSLEY",
+      "position": "Defensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player11": {
+      "id": "player11",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/JimmyMickle_TT.jpg",
+      "name": "JIMMY MICKLE",
+      "position": "Offensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player12": {
+      "id": "player12",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/GeorgeStubbs_TT.jpg",
+      "name": "GEORGE STUBBS",
+      "position": "Defensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player13": {
+      "id": "player13",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/ClaireChastain_TT.jpg",
+      "name": "CLAIRE CHASTAIN",
+      "position": "Offensive Handler",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    },
+    "player14": {
+      "id": "player14",
+      "imageUrl": "http://nationalteam.usaultimate.org/wp-content/uploads/2017/04/OpiPayne_TT.jpg",
+      "name": "OCTAVIA PAYNE",
+      "position": "Offensive Cutter",
+      "uid": "fe86M7AJ1SdcI6EbYKkb0wVaje72"
+    }
+}
