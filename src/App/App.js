@@ -3,6 +3,7 @@ import firebase from 'firebase/app';
 import MyNavBar from '../components/MyNavBar/MyNavBar';
 import firebaseConnection from '../helpers/data/connection';
 import Auth from '../components/Auth/Auth';
+import PlayersContainer from '../components/PlayersContainer/PlayersContainer';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -36,7 +37,7 @@ class App extends React.Component {
         {/* if they are authenticated, load the team roster */}
         {/* else show login button */}
         {
-          (authed) ? (<div>You logged in</div>) : (<Auth />)
+          (authed) ? (<PlayersContainer />) : (<Auth />)
         }
       </div>
     );
