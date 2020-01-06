@@ -34,8 +34,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <MyNavBar authed={authed} />
-        {/* if they are authenticated, load the team roster */}
-        {/* else show login button */}
         {
           (authed) ? (<PlayersContainer />) : (<Auth />)
         }
