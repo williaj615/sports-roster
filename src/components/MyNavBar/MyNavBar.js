@@ -31,8 +31,6 @@ class MyNavbar extends React.Component {
           </ul>
 
           <div className="form-inline my-2 my-lg-0">
-            {/* If authed, show logout button */}
-            {/* If NOT authed, show nothing */}
             { authed && (<button className="nav-link btn btn-danger" onClick={this.logMeOut}>Logout</button>) }
           </div>
         </div>
