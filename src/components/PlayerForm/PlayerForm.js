@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import authData from '../../helpers/data/authData';
+import playerShape from '../../helpers/propz/playerShape';
 
 class PlayerForm extends React.Component {
   static propTypes = {
     addPlayer: PropTypes.func,
     setCancelAdd: PropTypes.func,
+    playerToUpdate: playerShape.playerShape,
+    editMode: PropTypes.bool,
+    updatePlayer: PropTypes.func,
   }
 
   state = {
@@ -13,6 +17,13 @@ class PlayerForm extends React.Component {
     playerImageUrl: '',
     playerPosition: '',
 
+  }
+
+  componentDidMount() {
+    const { playerToUpdate, editMode } = this.props;
+    if (editMode) {
+      this.setState({ playerImageUrl: playerToUpdate.imageUrl, playerName: playerToUpdate.name, playerPosition: playerToUpdate.position });
+    }
   }
 
   savePlayerEvent = (e) => {
@@ -27,6 +38,18 @@ class PlayerForm extends React.Component {
     };
     addPlayer(newPlayer);
     this.setState({ playerName: '', playerImageUrl: '', playerPosition: '' });
+  }
+
+  updatePlayerEvent = (e) => {
+    e.preventDefault();
+    const { updatePlayer, playerToUpdate } = this.props;
+    const updatedPlayer = {
+      name: this.state.playerName,
+      position: this.state.playerPosition,
+      imageUrl: this.state.playerImageUrl,
+      uid: playerToUpdate.uid,
+    };
+    updatePlayer(playerToUpdate.id, updatedPlayer);
   }
 
   nameChange = (e) => {
@@ -45,6 +68,7 @@ class PlayerForm extends React.Component {
   }
 
   render() {
+    const { editMode } = this.props;
     return (
       <form className='col-6 offset-3 PlayerForm'>
       <div className="form-group">
@@ -80,8 +104,12 @@ class PlayerForm extends React.Component {
           onChange={this.imageUrlChange}
         />
       </div>
-      <button className="btn btn-secondary" onClick={this.savePlayerEvent}>Save Player</button>
-      <button className="btn btn-danger" onClick={this.setCancelAdd}>Cancel</button>
+      {}
+      {
+          (editMode) ? (<button className="btn btn-warning m-2" onClick={this.updatePlayerEvent}>Update Player</button>)
+            : (<button className="btn btn-warning m-2" onClick={this.savePlayerEvent}>Save Player</button>)
+        }
+        <button className="btn btn-danger m-2" onClick={this.setCancelAdd}>Cancel</button>
     </form>
     );
   }
