@@ -7,6 +7,16 @@ class Player extends React.Component {
 static propTypes = {
   player: playerShape.playerShape,
   removeSinglePlayer: PropTypes.func,
+  setEditMode: PropTypes.func,
+  setPlayerToUpdate: PropTypes.func,
+
+}
+
+setEditModeEvent = (e) => {
+  const { setEditMode, setPlayerToUpdate, player } = this.props;
+  e.preventDefault();
+  setEditMode(true);
+  setPlayerToUpdate(player);
 }
 
 removePlayerEvent = (e) => {
@@ -23,7 +33,7 @@ render() {
       <h3>{player.name}</h3>
       <p>{player.position}</p>
       <button className="delete-button btn btn-danger mb-2" onClick={this.removePlayerEvent}>Remove Player</button>
-      <button className="edit-button btn btn-info">Edit Player</button>
+      <button className="edit-button btn btn-info" onClick={this.setEditModeEvent}>Edit Player</button>
     </div>
   );
 }
