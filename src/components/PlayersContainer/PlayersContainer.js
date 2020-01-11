@@ -8,6 +8,7 @@ import PlayerForm from '../PlayerForm/PlayerForm';
 class PlayersContainer extends React.Component {
 state = {
   players: [],
+  displayPlayerForm: false,
 }
 
 getPlayers = () => {
@@ -30,8 +31,17 @@ addAPlayer = (newPlayer) => {
   playerData.savePlayer(newPlayer)
     .then(() => {
       this.getPlayers();
+      this.setState({ displayPlayerForm: false });
     })
     .catch((errOnSavePlayer) => console.error(errOnSavePlayer));
+}
+
+setDisplayPlayerForm = () => {
+  this.setState({ displayPlayerForm: true });
+}
+
+setCancelAdd = () => {
+  this.setState({ displayPlayerForm: false });
 }
 
 componentDidMount() {
@@ -41,7 +51,8 @@ componentDidMount() {
 render() {
   return (
     <div>
-      <PlayerForm addPlayer={this.addAPlayer} />
+      <button className="btn btn-secondary mt-3" onClick={this.setDisplayPlayerForm}>Add Roster Player</button>
+      { this.state.displayPlayerForm && (<PlayerForm addPlayer={this.addAPlayer} setCancelAdd={this.setCancelAdd}/>)}
       <div id="players-container" className="d-flex flex-row flex-wrap justify-content-around">
         {this.state.players.map((player) => (<Player key={player.id} player={player} removeSinglePlayer={this.removeSinglePlayer}/>))}
       </div>

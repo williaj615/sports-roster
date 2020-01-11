@@ -5,6 +5,7 @@ import authData from '../../helpers/data/authData';
 class PlayerForm extends React.Component {
   static propTypes = {
     addPlayer: PropTypes.func,
+    setCancelAdd: PropTypes.func,
   }
 
   state = {
@@ -76,10 +77,11 @@ class PlayerForm extends React.Component {
           id="player-image"
           placeholder="Enter player image url"
           value={this.state.playerImageUrl}
-          onChange={this.Change}
+          onChange={this.imageUrlChange}
         />
       </div>
       <button className="btn btn-secondary" onClick={this.savePlayerEvent}>Save Player</button>
+      <button className="btn btn-danger" onClick={this.setCancelAdd}>Cancel</button>
     </form>
     );
   }
