@@ -4,10 +4,10 @@
 Use this application to view and manipulate the members of the US National team. When authenticated, users can add new players to the roster, edit existing players and remove players. 
 
 ## Screenshots
-![Logged Out View](screenshots/logged_out_view.png)
-![Main View](screenshots/main_view.png)
-![Add View](screenshots/add_view.png)
-![Edit View](screenshots/edit_view.png)
+![Logged Out View](https://raw.githubusercontent.com/williaj615/sports-roster/master/screenshots/logged_out_view.png)
+![Main View](https://raw.githubusercontent.com/williaj615/sports-roster/master/screenshots/main_view.png)
+![Add View](https://raw.githubusercontent.com/williaj615/sports-roster/master/screenshots/add_view.png)
+![Edit View](https://raw.githubusercontent.com/williaj615/sports-roster/master/screenshots/edit_view.png)
 
 ## How To Run
 - Clone down the project
